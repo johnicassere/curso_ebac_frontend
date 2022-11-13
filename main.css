@@ -47,3 +47,17 @@ button {
 button:hover {
     background-color: aquamarine;
 }
+
+.div-section {
+    display: flex;
+    justify-content: center;
+}
+
+#campoResult {
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}

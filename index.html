@@ -12,18 +12,21 @@
         <h1>Integrando HTML com JavaScript</h1>
     </header>
     <main>
-        <form>
+        <form id="from-control">
             <label for="campoA">Campo A: </label>
-            <input type="number" name="campoA" id="campoA" placeholder="Campo A">
+            <input type="number" name="campoA" id="campoA" placeholder="Campo A" required>
 
             <label for="campoB">Campo B: </label>
-            <input type="number" name="campoB" id="campoB" placeholder="Campo B">
+            <input type="number" name="campoB" id="campoB" placeholder="Campo B" required>
 
-            <button type="submit">
+            <button type="submit" id="btn-enviar">
                 Enviar
             </button>
         </form>
     </main>
+    <div class="div-section">
+        <h2 id="campoResult">...</h2>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
