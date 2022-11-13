@@ -19,7 +19,6 @@ form.addEventListener('submit', function(e){
         campoResultado.style.display = "flex"
         campoResultado.style.backgroundColor = "red"
         campoResultado.innerHTML = `Formulário Inválido`
-        console.log(`Campo A é maior`);
     }
 })
 
