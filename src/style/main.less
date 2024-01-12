@@ -1,0 +1,128 @@
+@import "mapas";
+@import "variaveis";
+
+@breackMobile: ~"(max-width: 767px)";
+@breackTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fontePadrao;
+}
+
+.decoration{
+    text-decoration: none;
+}
+
+.width_100{
+    width: 100%;
+}
+
+body {
+   background-color: #colors[background-color];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    .width_100();
+    margin: 0 auto;
+}
+
+header {
+    background-color: #colors[headerColor];
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.menu li a {
+    color: #colors[textColor];
+    .decoration();
+}
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    .width_100();
+}
+
+.product-item img {
+    .width_100();
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: #colors[buttomColor];
+    color: #colors[textColor];
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    .decoration();
+
+    &:hover{
+    background-color: #4cd137;
+
+    }
+}
+
+
+@media screen and (@breackTablet) {
+    .container {
+        max-width: 80%;
+
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (@breackMobile) {
+    .products {
+    //display: block;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+    .container{
+        h2{
+            margin: 30px;
+        }
+    }
+}
