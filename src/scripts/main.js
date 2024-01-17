@@ -1,0 +1,1 @@
+let fontDoH1 = document.querySelector('h1').style.color='green';
