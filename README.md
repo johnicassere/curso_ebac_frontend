@@ -23,3 +23,5 @@ Para construir um e-mail utilizando o HTML, trabalhamos basicamente com **tabela
 
 Além dessas tags e atributos, é recomendável que utilizemos as tags `<b>` e `<i>` para bold e itálico, respectivamente, ao invés de `<strong>` e `<em>`, para conseguirmos uma compatibilidade maior entre os navegadores.
 
+Vou deixar um documento também bem interessante com mais algumas dicas de como se implementar um email utilizando o HTML:
+[Kinsta](https://kinsta.com/pt/blog/email-html/)
